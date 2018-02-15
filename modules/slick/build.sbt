@@ -5,7 +5,8 @@ libraryDependencies ++= Seq(
   "com.zaxxer" % "HikariCP" % "2.7.4",
   "com.typesafe.slick" %% "slick" % "3.2.1",
   "com.typesafe.slick" %% "slick-hikaricp" % "3.2.1",
-  "com.github.tototoshi" %% "slick-joda-mapper" % "2.3.0"
+  "com.github.tototoshi" %% "slick-joda-mapper" % "2.3.0",
+  "mysql" % "mysql-connector-java" % "5.1.18"
 )
 
 lazy val databaseUrl = sys.env.getOrElse("DB_DEFAULT_URL", "jdbc:h2:./test")

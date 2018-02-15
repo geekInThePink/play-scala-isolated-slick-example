@@ -1,3 +1,8 @@
+Adding docker config
+run with 
+docker-compose run --service-ports web sbt run
+in root dir.
+
 # Play with Slick 3.1
 
 [![Build Status](https://travis-ci.org/playframework/play-scala-isolated-slick-example.svg?branch=2.6.x)](https://travis-ci.org/playframework/play-scala-isolated-slick-example)

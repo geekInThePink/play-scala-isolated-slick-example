@@ -7,6 +7,7 @@
 //$ export DB_DEFAULT_PASSWORD=""
 
 libraryDependencies += "org.flywaydb" % "flyway-core" % "5.0.3"
+libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.18"
 
 lazy val databaseUrl = sys.env.getOrElse("DB_DEFAULT_URL", "jdbc:h2:./test")
 lazy val databaseUser = sys.env.getOrElse("DB_DEFAULT_USER", "sa")

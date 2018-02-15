@@ -3,6 +3,11 @@ import sbt.{Resolver, _}
 
 object Common {
 
+  val appDependencies = Seq(
+    // Add your project dependencies here,
+    "mysql" % "mysql-connector-java" % "5.1.18"
+)
+
   def projectSettings = Seq(
     scalaVersion := "2.12.4",
     javacOptions ++= Seq("-source", "1.8", "-target", "1.8"),
