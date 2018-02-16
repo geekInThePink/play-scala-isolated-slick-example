@@ -5,8 +5,6 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: play
-      MYSQL_USER: mysql_user
-      MYSQL_PASSWORD: SECCURE12345
     ports:
       - "1306:3306"
   web:
